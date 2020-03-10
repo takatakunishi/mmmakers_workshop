@@ -1,0 +1,19 @@
+.Header{
+  background: yellow;
+}
+
+.site-title-container{
+  height: 100%;
+  position: relative;
+}
+
+.site-title{
+  text-decoration: none;
+  background: white;
+  font-size: 50px;
+  display:inline-block;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  transform : translate(-50%,-50%);
+}

@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  background: red;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+}
+.nDisp {
+  display: none;
+}

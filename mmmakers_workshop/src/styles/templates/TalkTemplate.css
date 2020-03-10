@@ -1,0 +1,41 @@
+.TalkTemplate{
+  background: moccasin;
+}
+
+.TT-container{
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 65px;
+  grid-template-columns: 100%;
+}
+
+.Header{
+  grid-row: 1/2;
+  height: 100px;
+}
+
+.TT-contents{
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-auto-columns: 30% 70%;
+
+}
+
+.TT-contents .TalkGroupList, .TT-contents .TalkGroupList{
+  width: 100%;
+}
+
+.TT-contents .TalkGroupList{
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.TT-contents .TalkGroupList{
+  grid-row: 1/2;
+  grid-column: 2/3
+}
+
+.Footer{
+  grid-row: 3/4;
+}

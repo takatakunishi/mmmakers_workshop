@@ -1,0 +1,33 @@
+.UserRegistrationForm{
+  background: lightsteelblue;
+}
+
+
+.UserRegistrationForm .URF-container{
+  padding: 15px;
+  height: 100%;
+}
+
+.UserRegistrationForm .URF-title-container{
+  background: rgba(0,0,0,0.3);
+  height: 80px;
+  width: 100%;
+  position: relative;
+}
+
+.UserRegistrationForm .URF-title{
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform : translate(-50%,-50%);
+}
+
+.UserRegistrationForm .RegistrationFunction{
+  box-sizing: border-box;
+  margin-top: 15px;
+  padding: 15px;
+  height: 80%;
+}

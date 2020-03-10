@@ -1,0 +1,25 @@
+.UserRegistrationTemplate{
+  background: mistyrose;
+  height: 100vh;
+  width: 100vw;
+}
+
+.URT-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; /*左右中央揃え*/
+  align-items: center;     /*上下中央揃え*/
+}
+
+.UserRegistrationForm{
+  margin: auto;
+  width: 70%;
+  height: 85%;
+}
+
+.RegistrationFunction input {
+  height: 35px;
+  width: 100%;
+  font-size: 15px;
+}

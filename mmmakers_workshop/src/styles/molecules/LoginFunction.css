@@ -1,0 +1,44 @@
+.LoginFunction{
+  background: deepskyblue;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.LoginFunction .UserIDInput{
+  margin-top: 8%;
+}
+
+.LoginFunction .UserPassInput{
+  margin-top: 8%;
+}
+
+
+.LoginFunction .ForgetUserID {
+  position: absolute;
+  display: inline-block;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.btn-flat-border {
+  display: inline-block;
+  margin-top: 12%;
+  width: 150px;
+  height: 40px;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  font-size: 20px;
+}
+
+.btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+}
