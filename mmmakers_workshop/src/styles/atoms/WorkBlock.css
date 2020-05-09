@@ -1,0 +1,23 @@
+.WorkBlock{
+  text-align: center;
+  background: blueviolet;
+  display: inline-block;
+}
+
+.WorkBlock img{
+  object-fit: cover;
+  border-radius: 10%;
+  padding-top: 3%;
+  width: 90%;
+  height: 80%;
+  cursor: pointer;
+}
+
+.WorkBlock a{
+  display: inline-block;
+  width: 90%;
+  height: 5%;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

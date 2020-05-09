@@ -1,3 +1,12 @@
 .AllWorksDisplay{
   background: violet;
+  text-align: start;
+  overflow: auto;
+}
+
+.AllWorksDisplay .WorkBlock{
+  width: 300px;
+  height: 350px;
+  margin: 10px;
+  border-radius: 3%;
 }

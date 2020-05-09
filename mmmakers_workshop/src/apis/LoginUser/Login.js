@@ -5,7 +5,7 @@ export async function login(data) {
   console.log(info);
   try {
     console.log('in login api');
-    return await Axios.post('/users',data);
+    return await Axios.post('/users', data);
   } catch (error) {
     throw new Error(error);
   }

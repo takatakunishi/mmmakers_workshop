@@ -6,6 +6,7 @@
   background: black;
   padding: 5% ;
   height: 100%;
+  box-sizing: border-box;
 }
 
 .UPcontainer .UserBaseInfoTab,.UPcontainer .FollowInfoTab, .UPcontainer .UserPostedWorksTab{

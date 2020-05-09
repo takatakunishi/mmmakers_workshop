@@ -4,6 +4,7 @@
 
 .WD-container{
   padding: 15px;
+  box-sizing: border-box;
   height: 100%;
   background: cadetblue;
 }

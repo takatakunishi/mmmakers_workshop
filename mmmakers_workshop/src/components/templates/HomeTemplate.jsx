@@ -10,10 +10,12 @@ const HomeTemplate = () => {
   return (
     <div className="HomeTemplate">
       <Header />
-      <Menue />
-      <UserProfile />
-      <WorksDisplay />
-      <Footer />
+      <div className="HomeContentsContainer">
+        <Menue />
+        <UserProfile />
+        <WorksDisplay />
+        <Footer />
+      </div>
     </div>
   )
 }

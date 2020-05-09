@@ -1,27 +1,31 @@
 .HomeTemplate{
   background: aquamarine;
+}
+
+.HomeContentsContainer{
   display: grid;
-  grid-template-rows: 100px 900px 100px;
+  grid-template-rows: 1000px 700px 100px;
   grid-auto-columns: 20% 80%;
 }
 
-.Header {
-  grid-row: 1;
-  grid-column: 1/3;
+.HomeTemplate .Header{
+  position:sticky;
+  width: 100%;
+  top: 0;
 }
 
-.UserProfile{
-  grid-row: 2;
+.HomeTemplate .UserProfile{
+  grid-row: 1/3;
   grid-column: 1;
   height: 100%;
 }
 
-.WorksDisplay{
-  grid-row: 2;
+.HomeTemplate .WorksDisplay{
+  grid-row: 1/3;
   grid-column: 2;
 }
 
-.Footer {
-  grid-row: 3;
+.HomeTemplate .Footer{
+  grid-row:3/4;
   grid-column: 1/3;
 }
