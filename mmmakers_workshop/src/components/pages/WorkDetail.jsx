@@ -5,10 +5,6 @@ import WorkDetailTemplate from '../templates/WorkDetailTemplate'
 import { getAllWorksRequest } from '../../actions/Works/ActionCreater'
 
 const WorkDetail = () => {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(getAllWorksRequest());
-    }, [dispatch])
 
     return (
         <div className="WorkDetail">

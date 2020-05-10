@@ -16,7 +16,7 @@
 .WorkBlock a{
   display: inline-block;
   width: 90%;
-  height: 5%;
+  height: auto;
   cursor: pointer;
   text-overflow: ellipsis;
   overflow: hidden;

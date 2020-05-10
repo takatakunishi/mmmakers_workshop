@@ -7,6 +7,7 @@ import Talk from './pages/Talk'
 import UserLogin from './pages/UserLogin'
 import UserRegistration from './pages/UserRegistration'
 import WorkDetail from './pages/WorkDetail'
+import PostWork from './pages/PostWork'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact={true} path='/live' component={Live} />
         <Route exact={true} path='/Talk' component={Talk} />
         <Route exact={true} path='/UserLogin' component={UserLogin} />
+        <Route exact={true} path='/post' component={PostWork} />
         <Route path='/WorkDetail' component={WorkDetail} />
         <Route exact={true} path='/UserRegistration' component={UserRegistration} />
       </HashRouter>

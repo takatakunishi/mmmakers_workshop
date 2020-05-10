@@ -1,19 +1,31 @@
 .Header{
   background: yellow;
+  display: grid;
+  grid-auto-columns: 35% 2fr;
 }
 
 .site-title-container{
+  background-color: cyan;
   height: 100%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  grid-column: 1/2;
+  justify-content: center;
 }
 
-.site-title{
+.Header .site-title-container .site-title{
   text-decoration: none;
   background: white;
   font-size: 50px;
-  display:inline-block;
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  transform : translate(-50%,-50%);
+}
+
+.Header .PostWorkTab-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/3;
+}
+
+.Header .site-title-container .PostWorkTab{
+  font-size: 25px;
 }

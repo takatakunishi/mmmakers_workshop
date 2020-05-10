@@ -9,7 +9,7 @@
   grid-template-columns: 100%;
 }
 
-.Header{
+.TalkTemplate .Header{
   grid-row: 1/2;
   height: 100px;
 }

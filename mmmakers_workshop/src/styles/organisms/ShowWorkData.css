@@ -1,0 +1,43 @@
+.ShowWorkData{
+  text-align: center;
+  background: azure;
+  height: auto;
+}
+
+.ShowWorkData-container{
+  display: inline-block;
+  width: 90%;
+  padding: 20px 15px 15px;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 100%;
+  background: cadetblue;
+}
+
+.ShowWorkData .ShowWorkData-container .workImage{
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.ShowWorkData .ShowWorkData-container .ShowWorkData-ImageContainer{
+  background-color: cornflowerblue;
+}
+
+.ShowWorkData .ShowWorkData-container .worktitle,
+.ShowWorkData .ShowWorkData-container .workauther{
+  display: inline-block;
+  width: 100%;
+}
+
+.ShowWorkData .ShowWorkData-container .worktitle{
+  font-size: 30px;
+}
+
+.ShowWorkData-tagsData{
+  display: inline-flexbox;
+}
+
+.ShowWorkData-tag{
+  margin: 5px 18px;
+
+}
