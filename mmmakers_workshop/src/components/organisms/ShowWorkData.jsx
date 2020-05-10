@@ -39,7 +39,7 @@ const ShowWorkData = () => {
                 <div className="ShowWorkData-tagsData">
                     {
                         data.Tags.map((value, index) => {
-                            return <a className="ShowWorkData-tag" key={index}>{value}</a>
+                            return <a className="ShowWorkData-tag" key={index}>{"#" + value}</a>
                         })
                     }
                 </div>
