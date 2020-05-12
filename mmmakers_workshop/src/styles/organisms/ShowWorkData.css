@@ -24,13 +24,24 @@
 }
 
 .ShowWorkData .ShowWorkData-container .worktitle,
+.ShowWorkData .ShowWorkData-container .workauther,
+.ShowWorkData-tagsData,
+.ShowWorkData-description{
+  margin-top: 10px;
+}
+
+.ShowWorkData .ShowWorkData-container .worktitle,
 .ShowWorkData .ShowWorkData-container .workauther{
   display: inline-block;
   width: 100%;
 }
 
 .ShowWorkData .ShowWorkData-container .worktitle{
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.ShowWorkData .ShowWorkData-container .workauther{
+  font-size: 25px;
 }
 
 .ShowWorkData-tagsData{

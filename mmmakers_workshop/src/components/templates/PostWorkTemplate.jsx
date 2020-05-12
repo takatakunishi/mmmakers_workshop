@@ -1,13 +1,15 @@
 import React from 'react'
-// import '../../styles/templates/PostWorkTemplate.css'
+import '../../styles/templates/PostWorkTemplate.css'
 import Header from '../organisms/Header'
 import Footer from '../organisms/Footer'
+import PostData from '../organisms/PostData'
 
 const PostWorkTemplate = () => {
   return (
-    <div className="HomeTemplate">
+    <div className="PostWorkTemplate">
       <Header />
       <div className="PostWorkContentsContainer">
+        <PostData />
         <Footer />
       </div>
     </div>

@@ -1,0 +1,51 @@
+
+.displayImageAreaContainer {
+    margin-top: 50px;
+  }
+  
+  
+  .displayImageContainer{
+    width: 90vw;
+    margin: auto;
+  }
+  
+  .image {/*画像サイズを一定化*/
+    height: 120px;
+    width:120px;
+    border-radius: 25px;/*角丸く*/
+    margin-left: 10px;
+  }
+
+  
+.uploadContainerOnDrag {
+    width: 20vw;
+    height: 10vh;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+    background-color: palegreen;
+    border-style: dotted;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .uploadContainer {
+    width: 20vw;
+    height: 10vh;
+    margin: auto;
+    border-radius: 20px;
+    border-style: dotted;
+    font-weight: bold;
+    position: relative;
+
+  }
+  
+.uploadText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: black;
+  }

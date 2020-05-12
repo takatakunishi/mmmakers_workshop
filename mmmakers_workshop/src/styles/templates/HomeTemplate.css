@@ -4,6 +4,8 @@
 
 .HomeContentsContainer{
   display: grid;
+  min-height: 100vh;
+  height: auto;
   grid-template-rows: 1fr auto;
   grid-auto-columns: 20% 80%;
 }
@@ -22,7 +24,7 @@
 
 .HomeTemplate .WorksDisplay{
   min-height: 100vh;
-  height: auto;
+  height: 100%;
   grid-row: 1/2;
   grid-column: 2;
 }

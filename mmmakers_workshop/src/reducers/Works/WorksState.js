@@ -12,13 +12,24 @@ export default function WorksState(state = initState, action) {
         connection: true
       }
     case 'GETEACHWORK_SUCCESS':
-      console.log(action.data)
       return {
         workDetail: action.data["Id"][0],
         eachData: [...state.eachData],
         connection: true
       }
     case 'GETEACHWORK_FAILED':
+      return {
+        workDetail: state.data,
+        eachData: [...state.eachData],
+        connection: false
+      }
+    case 'POST_WORK_SUCCESS':
+      return {
+        workDetail: action.returnedData,
+        eachData: [...state.eachData],
+        connection: true
+      }
+    case 'POST_WORK_FAIL':
       return {
         workDetail: state.data,
         eachData: [...state.eachData],

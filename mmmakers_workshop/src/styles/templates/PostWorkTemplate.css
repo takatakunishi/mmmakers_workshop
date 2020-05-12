@@ -1,0 +1,29 @@
+.PostWorkTemplate{
+  background: aquamarine;
+  height: auto;
+}
+
+.PostWorkContentsContainer{
+  display: grid;
+  min-height: 100vh;
+  height: auto;
+  grid-template-rows: 1fr auto;
+}
+
+
+
+.PostWorkTemplate .UserProfile{
+  grid-row: 1/2;
+  grid-column: 1;
+  height: 100%;
+}
+
+.PostWorkTemplate .PostData{
+  /* min-height: 100vh; */
+  height: 100%;
+  grid-row: 1/2;
+}
+
+.PostWorkTemplate .Footer{
+  grid-row:2/3;
+}

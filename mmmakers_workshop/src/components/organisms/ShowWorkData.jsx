@@ -35,7 +35,7 @@ const ShowWorkData = () => {
                 </div>
                 <a className="worktitle">{data.Title}</a>
                 <a className="workauther">{data.Auth}</a>
-                <div>{data.Description}</div>
+                <div className="ShowWorkData-description">{data.Description}</div>
                 <div className="ShowWorkData-tagsData">
                     {
                         data.Tags.map((value, index) => {

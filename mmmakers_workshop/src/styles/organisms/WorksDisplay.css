@@ -10,10 +10,12 @@
 }
 
 .WD-container .AllWorksDisplay{
-  height: 60%;
+  height: 100%;
 }
 
 .WD-container .UsersProjects {
   margin-top: 15px;
-  height: 35%;
+  height: 0%;
+
+  display: none;
 }
