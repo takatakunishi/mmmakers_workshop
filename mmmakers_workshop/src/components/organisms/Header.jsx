@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="site-title-container">
-        <Link to="/" className="site-title">Creaters Workshop</Link>
+        <Link to="/" className="site-title"><img className="headerimage" src="https://creatorsfantasyfpn.com/img/creatersworkshop.png" /></Link>
       </div>
       <div className="PostWorkTab-container">
         <PostWorkTab />

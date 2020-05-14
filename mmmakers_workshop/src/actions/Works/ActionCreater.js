@@ -35,9 +35,10 @@ export const getEachWorkFailed = () => ({
 
 
 
-export const postWorkRequest = (postData) => ({
+export const postWorkRequest = (postData, userInfo) => ({
   type: POST_WORK_REQUEST,
-  postData
+  postData,
+  userInfo
 });
 
 export const postWorkSuccess = (returnedData) => ({

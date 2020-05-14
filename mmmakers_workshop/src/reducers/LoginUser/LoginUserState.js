@@ -1,24 +1,25 @@
+import { useHistory } from 'react-router-dom';
+
 const initState = {
-  userId: '',
-  token: ''
+  userName: '',
+  password: '',
+  login: false
 }
-export default function LoginUserState( state = initState, action){
+
+export default function LoginUserState(state = initState, action) {
   switch (action.type) {
-    case 'LOGIN_REQUEST':
-      return{
-        ...state
-      }
     case 'LOGIN_SUCCESS':
-      return{
-        ...state,
-        userId: action.data.userId,
-        token: action.data.token
+      return {
+        userName: action.data.data.userName,
+        password: action.data.data.password,
+        login: true
       }
     case 'REGISTRATION_SUCCESS':
-      return{
-        ...state,
-        userId: action.data.userId,
-        token: action.data.token
+      console.log(action.data)
+      return {
+        userName: action.data.data.userName,
+        password: action.data.data.password,
+        login: true
       }
     default:
       return state;

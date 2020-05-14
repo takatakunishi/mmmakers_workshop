@@ -5,14 +5,14 @@ export const loginRequest = (data) => ({
   data
 });
 
-export const loginSuccess = (data) => ({
+export const loginSuccess = (response, data) => ({
   type: LOGIN_SUCCESS,
+  response,
   data
 })
 
 export const loginFailed = (data) => ({
-  type: LOGIN_FAILED,
-  data
+  type: LOGIN_FAILED
 })
 
 
@@ -21,12 +21,12 @@ export const registrationRequest = (data) => ({
   data
 });
 
-export const registrationSuccess = (data) => ({
+export const registrationSuccess = (response, data) => ({
   type: REGISTRATION_SUCCESS,
+  response,
   data
 })
 
 export const registrationFailed = (data) => ({
-  type: REGISTRATION_FAILED,
-  data
+  type: REGISTRATION_FAILED
 })

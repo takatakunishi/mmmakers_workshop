@@ -1,6 +1,10 @@
 import Axios from "../Axios";
 
-export async function postWork(postData) {
+export async function postWork(postData, userInfo) {
+  const info = userInfo;
+  console.log(userInfo);
+  console.log(postData);
+
   const dayData = new Date();
   const year = dayData.getFullYear();
   const month = dayData.getMonth();
@@ -32,8 +36,18 @@ export async function postWork(postData) {
         ]
       }
     }
+    const userinfo = {
+      "email": info.userName,
+      "password": info.password
+    }
 
-    return await Axios.post('/aps/routerCgi.cgi/PostData', data);
+    var postdata = {
+      "Work": data,
+      "UserInfo": userinfo
+    }
+
+
+    return await Axios.post('/aps/routerCgi.cgi/PostData', postdata);
   } catch (e) {
     throw new Error(e);
   }

@@ -10,16 +10,17 @@ import WorkDetail from './pages/WorkDetail'
 import PostWork from './pages/PostWork'
 
 function App() {
+
   return (
     <div className="App">
       <HashRouter>
         <Route exact={true} path='/' component={Home} />
         <Route exact={true} path='/live' component={Live} />
         <Route exact={true} path='/Talk' component={Talk} />
-        <Route exact={true} path='/UserLogin' component={UserLogin} />
+        <Route exact={true} path='/login' component={UserLogin} />
         <Route exact={true} path='/post' component={PostWork} />
         <Route path='/WorkDetail' component={WorkDetail} />
-        <Route exact={true} path='/UserRegistration' component={UserRegistration} />
+        <Route exact={true} path='/signup' component={UserRegistration} />
       </HashRouter>
     </div>
   );

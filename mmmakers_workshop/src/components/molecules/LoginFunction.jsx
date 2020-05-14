@@ -1,37 +1,59 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../styles/molecules/LoginFunction.css'
 import UserIDInput from '../atoms/UserIDInput'
 import UserPassInput from '../atoms/UserPassInput'
-import ForgetUserID from '../atoms/ForgetUserID'
-import {loginRequest} from '../../actions/LoginUser/ActionCreater'
+import Tosignup from '../atoms/Tosignup'
+import { loginRequest } from '../../actions/LoginUser/ActionCreater'
 import { useDispatch } from 'react-redux'
+import { useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+
 
 const LoginFunction = () => {
+  const history = useHistory();
+  const login = useSelector(state => state.loginUser.login);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    loginCheck()
+  })
+
   const onClickLoginButton = () => {
     const id = document.getElementById("UID_text");
     const pass = document.getElementById("UPI_text");
-    if (pass.value !== '' && id.value !== ''){
+    if (pass.value !== '' && id.value !== '') {
       const data = {
-        userId: id.value,
-        token: pass.value
+        userName: id.value,
+        password: pass.value
       }
       dispatch(loginRequest(data));
       console.log(id.value);
       console.log(pass.value);
       pass.value = '';
       id.value = '';
-    }else{
+    } else {
       alert("必要事項が全て入力されていません");
     }
   }
+
+  function loginCheck() {
+    if (login) {
+      history.push({
+        pathname: '/',
+        state: {
+          // url: url,
+          // path: path
+        }
+      });
+    }
+  }
+
   return (
-    <div className = "LoginFunction">
-      LoginFunction
+    <div className="LoginFunction">
       <UserIDInput />
       <UserPassInput />
-      <button className = "btn-flat-border" onClick={onClickLoginButton}>Log in</button>
-      <ForgetUserID />
+      <button className="btn-flat-border" onClick={onClickLoginButton}>Log in</button>
+      <Tosignup />
     </div>
   )
 }

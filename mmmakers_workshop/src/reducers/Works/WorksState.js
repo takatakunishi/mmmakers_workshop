@@ -13,7 +13,7 @@ export default function WorksState(state = initState, action) {
       }
     case 'GETEACHWORK_SUCCESS':
       return {
-        workDetail: action.data["Id"][0],
+        workDetail: action.data[0],
         eachData: [...state.eachData],
         connection: true
       }

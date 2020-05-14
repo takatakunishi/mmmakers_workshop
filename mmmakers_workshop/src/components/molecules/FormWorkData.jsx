@@ -38,8 +38,14 @@ const FormWorkData = () => {
   }
 
   var dis = util.promisify((url) => {
-    const worksData = ["mmmaker", workPostTitle, url, workPostComment];
-    dispatch(postWorkRequest(worksData))
+    const userdata = {
+      userName: loginUser.userName,
+      password: loginUser.password,
+    }
+    console.log(userdata);
+
+    const worksData = [loginUser.userName, workPostTitle, url, workPostComment];
+    dispatch(postWorkRequest(worksData, userdata))
   })
 
   async function actionfun() {
