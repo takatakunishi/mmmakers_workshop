@@ -5,6 +5,8 @@ import HomeTemplate from '../templates/HomeTemplate'
 import { getAllWorksRequest } from '../../actions/Works/ActionCreater'
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Load from '../molecules/Load'
+import { loading } from '../../actions/Upload/ActionCreator';
 
 
 const Home = () => {
@@ -27,6 +29,7 @@ const Home = () => {
   useEffect(() => {
     loginCheck().then((c) => {
       if (c) {
+        dispatch(loading());
         dispatch(getAllWorksRequest());
       }
     })
@@ -35,6 +38,7 @@ const Home = () => {
   return (
     <div className="Home">
       <HomeTemplate />
+      <Load showWord={"Loading Data"} />
     </div>
   );
 }

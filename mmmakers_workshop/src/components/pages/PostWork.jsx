@@ -3,6 +3,7 @@ import '../../styles/pages/Home.css';
 import PostWorkTemplate from '../templates/PostWorkTemplate'
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Load from '../molecules/Load'
 
 const PostWork = () => {
     const history = useHistory();
@@ -28,6 +29,7 @@ const PostWork = () => {
     return (
         <div className="PostWork">
             <PostWorkTemplate />
+            <Load showWord={"Uploading"} />
         </div>
     );
 }

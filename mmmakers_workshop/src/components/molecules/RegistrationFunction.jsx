@@ -3,6 +3,7 @@ import '../../styles/molecules/RegistrationFunction.css'
 import { registrationRequest } from '../../actions/LoginUser/ActionCreater'
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import { loading } from '../../actions/Upload/ActionCreator';
 import ForgetUserID from '../atoms/ForgetUserID'
 
 const RegistrationFunction = () => {
@@ -45,6 +46,7 @@ const RegistrationFunction = () => {
         password: password,
         // eMail:email
       };
+      dispatch(loading());
       dispatch(registrationRequest(data));
       // setUserId('');
       setUserName('');

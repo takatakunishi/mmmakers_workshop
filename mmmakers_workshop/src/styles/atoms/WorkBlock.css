@@ -1,7 +1,8 @@
 .WorkBlock{
   text-align: center;
-  background: blueviolet;
+  background: rgb(56, 23, 87);
   display: inline-block;
+  color: ghostwhite;
 }
 
 .WorkBlock img{

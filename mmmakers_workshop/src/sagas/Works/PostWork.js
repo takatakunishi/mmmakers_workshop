@@ -2,6 +2,7 @@ import { postWork } from "../../apis/Works/PostWork";
 import { call, put } from 'redux-saga/effects';
 import { postWorkSuccess, postWorkFailed } from "../../actions/Works/ActionCreater";
 import { resetContent } from '../../actions/Upload/ActionCreator';
+import { loaded } from '../../actions/Upload/ActionCreator';
 export function* postWorkSaga(data) {
     console.log(data);
 
@@ -14,6 +15,7 @@ export function* postWorkSaga(data) {
     if (response.status === 200 && response.data) {
         yield put(postWorkSuccess(response.data));
         yield put(resetContent());
+        yield put(loaded());
     } else if (response.status === 400) {
         yield put(postWorkFailed());
     } else {

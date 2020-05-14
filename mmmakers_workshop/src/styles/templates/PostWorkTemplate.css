@@ -1,5 +1,5 @@
 .PostWorkTemplate{
-  background: aquamarine;
+  /* background: aquamarine; */
   height: auto;
 }
 
@@ -27,3 +27,4 @@
 .PostWorkTemplate .Footer{
   grid-row:2/3;
 }
+

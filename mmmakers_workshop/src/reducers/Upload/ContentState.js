@@ -1,9 +1,10 @@
-import { RESET_CONTENT, SET_URL_CONTENT, POST_CONTENT } from "../../actions/Upload/ActionType";
+import { RESET_CONTENT, SET_URL_CONTENT, POST_CONTENT, LOADING, LOADED } from "../../actions/Upload/ActionType";
 
 const initialState = {
   file: {},
   url: [],
-  data: []
+  data: [],
+  load: false
 };
 
 
@@ -13,19 +14,36 @@ const ContentState = (state = initialState, action) => {
       return {
         file: action.file,
         url: [...state.url],
-        data: [...state.data]
+        data: [...state.data],
+        load: state.load
       }
     case SET_URL_CONTENT:
       return {
         file: { ...state.file },
         url: [...action.url],
-        data: []
+        data: [],
+        load: state.load
       }
     case RESET_CONTENT:
       return {
         file: {},
         url: [],
-        data: []
+        data: [],
+        load: state.load
+      }
+    case LOADING:
+      return {
+        file: { ...state.file },
+        url: [...state.url],
+        data: [...state.data],
+        load: true
+      }
+    case LOADED:
+      return {
+        file: {},
+        url: [],
+        data: [],
+        load: false
       }
     default:
       return state;

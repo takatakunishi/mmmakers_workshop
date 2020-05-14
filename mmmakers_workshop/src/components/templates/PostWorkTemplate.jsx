@@ -3,6 +3,7 @@ import '../../styles/templates/PostWorkTemplate.css'
 import Header from '../organisms/Header'
 import Footer from '../organisms/Footer'
 import PostData from '../organisms/PostData'
+import Load from '../molecules/Load'
 
 const PostWorkTemplate = () => {
   return (

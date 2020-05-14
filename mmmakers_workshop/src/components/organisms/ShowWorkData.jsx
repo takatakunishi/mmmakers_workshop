@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import '../../styles/organisms/ShowWorkData.css'
 import { getEachWorkRequest } from '../../actions/Works/ActionCreater';
+import { loading } from '../../actions/Upload/ActionCreator';
 
 const ShowWorkData = () => {
 
@@ -22,6 +23,7 @@ const ShowWorkData = () => {
         });
     }
     useEffect(() => {
+        dispatch(loading());
         pros();
     }, [])
     const data = useSelector(state => state.worksState.workDetail);
