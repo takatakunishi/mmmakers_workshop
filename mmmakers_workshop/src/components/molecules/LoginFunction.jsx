@@ -4,6 +4,7 @@ import UserIDInput from '../atoms/UserIDInput'
 import UserPassInput from '../atoms/UserPassInput'
 import Tosignup from '../atoms/Tosignup'
 import { loginRequest } from '../../actions/LoginUser/ActionCreater'
+import { loading } from '../../actions/Upload/ActionCreator'
 import { useDispatch } from 'react-redux'
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -26,6 +27,7 @@ const LoginFunction = () => {
         userName: id.value,
         password: pass.value
       }
+      dispatch(loading());
       dispatch(loginRequest(data));
       console.log(id.value);
       console.log(pass.value);

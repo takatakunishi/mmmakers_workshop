@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { postWorkRequest } from '../../actions/Works/ActionCreater';
+import { loading } from '../../actions/Upload/ActionCreator';
 import { useDispatch, useSelector } from 'react-redux';
 import { firebaseApp } from '../../plugins/firebase';
 import '../../styles/molecules/FormWorkData.css';
@@ -61,6 +62,7 @@ const FormWorkData = () => {
       alert("空欄を埋めてください");
       return;
     }
+    dispatch(loading())
     actionfun();
     setworkPostTitle("");
     setworkPostComment("");

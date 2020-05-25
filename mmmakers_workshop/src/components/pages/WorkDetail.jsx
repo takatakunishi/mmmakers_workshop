@@ -3,6 +3,7 @@ import '../../styles/pages/Home.css';
 import WorkDetailTemplate from '../templates/WorkDetailTemplate'
 import { useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import Load from '../molecules/Load'
 
 
 const WorkDetail = () => {
@@ -28,7 +29,8 @@ const WorkDetail = () => {
     return (
         <div className="WorkDetail">
             <WorkDetailTemplate />
-        </div>
+            <Load showWord={"Loading"} />
+        </div >
     );
 }
 

@@ -24,7 +24,7 @@ const DropZone = () => {
   }
 
   return (
-    <div>
+    <div className="DropZone">
       <Dropzone onDrop={onDrop}>
         {({ isDragActive, getInputProps, getRootProps }) => (
           <div className={isDragActive ? 'uploadContainerOnDrag' : 'uploadContainer'} {...getRootProps()}>

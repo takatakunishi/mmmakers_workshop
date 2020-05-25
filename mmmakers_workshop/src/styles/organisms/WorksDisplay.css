@@ -1,12 +1,11 @@
 .WorksDisplay{
-  background: azure;
+  background: rgba(26, 0, 56, 0.979);
 }
 
 .WD-container{
   padding: 15px;
   box-sizing: border-box;
   height: 100%;
-  background: cadetblue;
 }
 
 .WD-container .AllWorksDisplay{

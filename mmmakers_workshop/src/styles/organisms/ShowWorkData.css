@@ -1,6 +1,6 @@
 .ShowWorkData{
   text-align: center;
-  background: azure;
+  background: rgba(26, 0, 56, 0.979);
   height: auto;
 }
 
@@ -11,7 +11,8 @@
   box-sizing: border-box;
   height: auto;
   min-height: 100%;
-  background: cadetblue;
+  background: rgb(85, 84, 85);
+  color: aliceblue;
 }
 
 .ShowWorkData .ShowWorkData-container .workImage{
@@ -20,7 +21,7 @@
 }
 
 .ShowWorkData .ShowWorkData-container .ShowWorkData-ImageContainer{
-  background-color: cornflowerblue;
+  /* background-color: rgb(36, 33, 51); */
 }
 
 .ShowWorkData .ShowWorkData-container .worktitle,

@@ -1,3 +1,6 @@
+.DropZone{
+  color: aliceblue;
+}
 
 .displayImageAreaContainer {
     margin-top: 50px;
@@ -30,8 +33,8 @@
   }
   
   .uploadContainer {
-    width: 20vw;
-    height: 10vh;
+    width: 40vw;
+    height: 25vh;
     margin: auto;
     border-radius: 20px;
     border-style: dotted;
@@ -47,5 +50,5 @@
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     text-align: center;
-    color: black;
+    color: aliceblue;
   }
