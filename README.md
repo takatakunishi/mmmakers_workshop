@@ -14,3 +14,5 @@
  - 検索ができるようにする
  - GOでサーバー書いたけどサーバーも書きながらだと進捗なくなりそうなのでFirebaseに移行する
  - Cloud Function使うのもあり（cgiにしてやるの面倒だしいろいろ制約かかっている）
+ - dropzone修正したい
+ - react-beautiful-dndを使ってみる
