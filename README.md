@@ -16,3 +16,4 @@
  - Cloud Function使うのもあり（cgiにしてやるの面倒だしいろいろ制約かかっている）
  - dropzone修正したい
  - react-beautiful-dndを使ってみる
+ - Typescriptに変換したい（データ定義して安心したい）
